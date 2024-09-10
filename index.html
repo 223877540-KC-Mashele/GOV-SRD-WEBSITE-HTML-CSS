@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>SASSA</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/logo.png" alt="SASSA Logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#apply" class="nav__link">Apply Online</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#status" class="nav__link">Check Status</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#appeal" class="nav__link">Lodge an Appeal</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__header">
+                    <h1 class="home__title">How do I apply for the SRD Grant?</h1>
+                    <a href="#apply" class="button button--flex">Click here to apply online</a>
+                </div>
+                <div class="home__footer">
+                    <h3 class="home__title-description">Application Status</h3>
+                    <a href="assets/status.pdf" download class="button">Download Status PDF</a>
+                    <a href="#status" class="button button--flex">Click here to check online</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="specs section" id="status">
+            <h2 class="section__title">Reconsideration Status: May 2020 - March 2022</h2>
+            <div class="specs__container container grid">
+                <div class="specs__data">
+                    <p>Reconsideration processing for the period May 2020 to March 2022 has been completed, and no new applications will be considered for this period.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="appeal section" id="appeal">
+            <div class="container grid">
+                <div class="appeal__header">
+                    <h1>Lodging an Appeal</h1>
+                    <p>If your application was declined, you can submit an appeal by accessing the <a href="/appeals">DSD appeals website</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="banking section" id="banking">
+            <div class="container grid">
+                <div class="banking__header">
+                    <h1>Change Banking Details</h1>
+                    <p>Submit your ID Number below to receive a link via SMS to change your banking details.</p>
+                    <form action="#">
+                        <label for="id-number">ID Number:</label>
+                        <input type="text" id="id-number" name="id-number" required>
+                        <button type="submit" class="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="update section" id="update-names">
+            <div class="container grid">
+                <div class="update__header">
+                    <h1>Request Name and Surname Update</h1>
+                    <p>Enter your information exactly as it appears on your South African ID card to request an update.</p>
+                    <form action="#">
+                        <label for="id-number">ID Number:</label>
+                        <input type="text" id="id-number" name="id-number" required>
+                        <label for="names">Names:</label>
+                        <input type="text" id="names" name="names" required>
+                        <label for="surname">Surname:</label>
+                        <input type="text" id="surname" name="surname" required>
+                        <button type="submit" class="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="cancel section" id="cancel-application">
+            <div class="container grid">
+                <div class="cancel__header">
+                    <h1>Cancel My Application</h1>
+                    <p>If your situation has changed, you can cancel your SRD grant application by clicking the button below.</p>
+                    <a href="#" class="button button--flex">Click here to cancel online</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reinstate section" id="reinstate-application">
+            <div class="container grid">
+                <div class="reinstate__header">
+                    <h1>Reinstate My Application</h1>
+                    <p>If you previously canceled your SRD grant application but wish to reinstate it, click below.</p>
+                    <a href="#" class="button button--flex">Click here to reinstate online</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
